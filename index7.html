@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra và xóa phần tử</title>
+</head>
+<body>
+<input type="text" id="nhapso" placeholder="Nhập số cần tìm" value="">
+<button onclick="kiemtra()">Kiểm tra</button>
+<script>
+    let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    function kiemtra() {
+        let number = parseInt(document.getElementById("nhapso").value);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === number) {
+
+                arr.splice(i, 1)
+            }
+
+        }document.write(arr.toString());
+    }
+</script>
+</body>
+</html>
