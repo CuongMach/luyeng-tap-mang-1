@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị lớn nhất và giá trị trung bình</title>
+</head>
+<body>
+<script>
+    let arr = [2, 3, 4, 6, 1, 9, 2, 3];
+    let max = arr[0];
+    let sum = 0;
+    let trungbinhcong = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    for(let j=0; j< arr.length; j++){
+        sum += arr[j]
+        trungbinhcong = sum/arr.length
+    }
+    document.write("Số lớn nhất là: " + max +"<br>");
+    document.write("Trung bình cộng của mảng là " + trungbinhcong);
+</script>
+</body>
+</html>
