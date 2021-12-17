@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số nguyên âm</title>
+</head>
+<body>
+<script>
+    let arr = [1,-2,3,-4,5,-6];
+    let dem = 0;
+    let text = "";
+    for(i=0; i<arr.length; i++){
+        if(arr[i]<0){
+            dem ++
+            text += arr[i] + " "
+        }
+    }
+    document.write("số nguyên âm cùa mảng là " + dem + " Bao gồm " + text)
+
+</script>
+</body>
+</html>
